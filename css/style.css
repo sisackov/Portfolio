@@ -125,8 +125,37 @@ TODO
   height: var(--page-size);
 }
 
+#portfolio .container {
+  /* FIXME */
+  margin-top: 500px;
+}
+.portfolio__grid {
+  /* margin: auto; */
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  /* grid-auto-rows: 100px; */
+  grid-auto-flow: dense;
+}
+
+.portfolio__grid--item {
+  /* .portfolio__grid a { */
+  grid-column: span 1;
+  grid-row: span 3;
+}
+
+.portfolio__grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* .portfolio__grid--item {
+  width: 30vh;
+} */
+
 /* Section: Contact */
-/* TODO */
+/* TODO animation*/
 .contact {
   display: flex;
   height: 90vh;
