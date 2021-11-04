@@ -94,23 +94,33 @@ p {
   height: var(--page-size);
 }
 
-.about .items {
+/* .about .container {
+  margin-top: 65px;
+} */
+
+.about__items {
   display: flex;
   padding: 1rem;
 }
 
-.about .items .item {
+.about__items--item {
   flex: 1;
   text-align: center;
   padding: 1rem;
 }
 
-.about .items .item i {
-  background: #93cb52;
+.about__items--item i {
+  background: var(--color-redpink);
   padding: 1rem;
   border-radius: 50%;
   margin-bottom: 1rem;
 }
+
+/* .about__items--text {
+  margin: 1rem auto;
+  border: var(--color-darkpink) 4px solid;
+  border-radius: 20%;
+} */
 
 /* Section: Portfolio */
 .portfolio {
