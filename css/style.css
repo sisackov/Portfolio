@@ -89,14 +89,10 @@ p {
 }
 
 /* Section: About */
-/* TODO */
+/* TODO animations */
 .about {
   height: var(--page-size);
 }
-
-/* .about .container {
-  margin-top: 65px;
-} */
 
 .about__items {
   display: flex;
@@ -116,7 +112,9 @@ p {
   margin-bottom: 1rem;
 }
 
-/* .about__items--text {
+/* 
+TODO
+.about__items--text {
   margin: 1rem auto;
   border: var(--color-darkpink) 4px solid;
   border-radius: 20%;
@@ -131,24 +129,46 @@ p {
 /* TODO */
 .contact {
   display: flex;
-  height: calc(var(--page-size) - 1rem);
+  height: 90vh;
+  background: rgba(0, 0, 0, 0.3)
+    url("/img/florian-olivo-4hbJ-eymZ1o-unsplash.jpg") no-repeat center
+    center/cover;
 }
 
-.contact .map,
-.contact .contact-form {
+.contact h2 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  line-height: 1.1;
+}
+
+.contact__form {
   flex: 1;
+  border-radius: 8%;
+  background: var(--color-lightgreen);
+
+  padding: 2rem;
+  margin-top: 5rem;
 }
 
-.contact .contact-form .form-group {
+.contact__form form {
+  padding-top: 2rem;
+}
+
+.contact__form--item {
   margin: 0.75rem;
 }
 
-.contact .contact-form label {
-  display: block;
-}
-
-.contact .contact-form input,
-.contact .contact-form textarea {
+.contact .contact__form input,
+.contact .contact__form textarea {
   width: 100%;
   padding: 0.5rem;
+}
+
+.contact .contact__form .contact__form--btn {
+  font-size: 1.2rem;
+}
+
+.footer {
+  height: 5vh;
+  padding-top: 0.2rem;
 }

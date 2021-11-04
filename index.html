@@ -93,37 +93,33 @@
 
     <!-- Section: Contact -->
     <section id="contact" class="contact">
-        <div class="contact-form bg-primary p-2">
-            <h2 class="m-heading">Contact Us</h2>
-            <p>Please use the form below to contact us</p>
-            <form action="process.php" method="POST">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="name" placeholder="Enter Name">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Enter Email">
-                </div>
-                <div class="form-group">
-                    <label for="phone">Phone Number</label>
-                    <input type="text" name="phone" id="phone" placeholder="Enter Phone Number">
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message" placeholder="Enter Message"></textarea>
-                </div>
-                <input type="submit" value="Send" class="hero__ hero__-dark">
-            </form>
+        <div class="container">
+            <div class="contact__form">
+                <h2 class="text-center"><span class="text-tint">Leave</span> a Message</h2>
+                <form action="process.php" method="POST">
+                    <div class="contact__form--item">
+                        <input type="text" name="name" placeholder="Name">
+                    </div>
+                    <div class="contact__form--item">
+                        <input type="email" name="email" placeholder="Email">
+                    </div>
+                    <div class="contact__form--item">
+                        <input type="text" name="phone" placeholder="Phone Number">
+                    </div>
+                    <div class="contact__form--item">
+                        <textarea name="message" placeholder="Message"></textarea>
+                    </div>
+                    <div class="contact__form--item">
+                        <input type="submit" value="Send" class="btn contact__form--btn">
+                    </div>
+                </form>
+            </div>
         </div>
-        <div class="map"></div>
     </section>
 
     <!-- Footer -->
-    <footer id="main-footer" class="bg-dark text-center py-1">
-        <div class="container">
-            <p>Copyright &copy; 2021, Stas Isackov</p>
-        </div>
+    <footer class="footer bg-dark text-center">
+        <div>Copyright &copy; 2021, Stas Isackov</div>
     </footer>
 </body>
 
