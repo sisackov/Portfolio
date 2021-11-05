@@ -12,7 +12,7 @@
     <title>About Me</title>
 </head>
 
-<body id="home">
+<body id="home" class="bg-light">
     <nav class="navbar">
         <!-- TODO logo animation -->
         <div class="logo"><i class="logo fas fa-terminal  fa-2x"></i></div>
@@ -34,7 +34,7 @@
     </header>
 
     <!-- Section: About -->
-    <section id="about" class="about bg-light py-1">
+    <section id="about" class="about py-1">
         <div class="container">
             <h2 class="m-heading text-center"><span class="text-tint">About</span> Me</h2>
             <div class="about__items">
@@ -64,6 +64,7 @@
                             corrupti dolorem. Ratione dolorem sint accusamus delectus iste possimus natus, sed quis
                             voluptas, facere saepe accusantium.
                         </p>
+                        <!-- TODO add family picture -->
                     </div>
                 </div>
                 <div class="about__items--item">
@@ -85,11 +86,38 @@
     </section>
 
     <!-- Section: Portfolio -->
-    <section id="portfolio" class="portfolio">
+    <section id="portfolio" class="portfolio py-1">
         <div class="container">
             <h2 class="m-heading text-center"><span class="text-tint">Projects</span> Gallery</h2>
-            <div class="portfolio__grid text-center">
+            <div class="portfolio__items text-center">
+                <div class="portfolio__items--item">
+                    <h3>Recipe-Book API</h3>
+                    <p>Node.js server that provides a REST API for Recipe-Book apps</p>
+                    <a href="https://github.com/sisackov/recipe-book-api" target="_blank">
+                        <img src="img/frank-holleman-rN_RMqSXRKw-unsplash.jpg"></a>
+                </div>
+                <div class="portfolio__items--item">
+                    <h3>Buddies-Map</h3>
+                    <p>Android application for sharing recommendations in friend's groups</p>
+                    <a href="https://github.com/sisackov/buddiesmap" target="_blank">
+                        <img src="img/mael-balland-7rImz-goqfQ-unsplash.jpg"></a>
+                </div>
+                <div class="portfolio__items--item">
+                    <h3>Tesla-Mockup</h3>
+                    <p>Mockup of Tesla Model 3 HTML page. Done in resolution 1920x1080</p>
+                    <a href="https://github.com/sisackov/tesla-mockup" target="_blank">
+                        <img src="img/martin-katler-DiJR_M1Mv_A-unsplash.jpg"></a>
+                </div>
+            </div>
+
+
+
+            <!-- TODO semantics with figure and caption -->
+            <!-- 
+                <h2 class="m-heading text-center"><span class="text-tint">Projects</span> Gallery</h2>
+                <div class="portfolio__grid text-center">
                 <div class="portfolio__grid--item">
+                    
                     <h3 class="s-heading">Recipe-Book API</h3>
                     <p>Node.js server that provides a REST API for Recipe-Book apps</p>
                     <a href="https://github.com/sisackov/recipe-book-api" target="_blank"><img
@@ -107,7 +135,9 @@
                     <a href="https://github.com/sisackov/tesla-mockup" target="_blank"><img
                             src="img/martin-katler-DiJR_M1Mv_A-unsplash.jpg"></a>
                 </div>
-            </div>
+            </div> -->
+
+
         </div>
 
     </section>
@@ -139,6 +169,7 @@
     </section>
 
     <!-- Footer -->
+    <!-- TODO add social links here -->
     <footer class="footer bg-dark text-center">
         <div>Copyright &copy; 2021, Stas Isackov</div>
     </footer>
