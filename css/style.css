@@ -57,6 +57,34 @@ p {
   border-radius: 5px;
 }
 
+/* Logo animation */
+.logo {
+  position: relative;
+}
+
+.logo::after {
+  content: "";
+  position: absolute;
+  background: var(--primary-color);
+  padding: 1rem;
+  margin-left: 3rem;
+  left: 0;
+  top: 0;
+  animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /* Hero */
 .hero {
   background: #333 url("/img/hero-img.jpg") no-repeat center center/cover;
@@ -144,25 +172,6 @@ TODO animation
   height: 300px;
   object-fit: cover;
 }
-
-/* .portfolio__grid {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  grid-auto-rows: 100px;
-  grid-auto-flow: dense;
-}
-
-.portfolio__grid--item {
-  grid-column: span 1;
-  grid-row: span 3;
-}
-
-.portfolio__grid img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
 
 /* Section: Contact */
 /* TODO animation*/
