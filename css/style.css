@@ -18,6 +18,7 @@
 body {
   font-family: "Roboto", sans-serif;
   line-height: 1.4;
+  min-width: 320px;
 }
 
 a {
@@ -73,16 +74,13 @@ p {
   animation: blink 1s linear infinite;
 }
 
-@keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+/* Container for all pages */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+  margin-top: 65px;
 }
 
 /* Hero */
