@@ -38,21 +38,23 @@
 */
 @media (min-width: 320px) and (max-width: 480px) {
   .container {
-    margin-top: 75px;
+    margin-top: 80px;
   }
+
   .navbar {
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
   }
 
   .navbar .logo {
     right: 0;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.5rem;
   }
 
   .hero-content {
     justify-content: flex-start;
-    top: 96px;
+    top: 101px;
   }
 
   .hero-content > * {
@@ -93,4 +95,7 @@
   }
 
   /* Contact */
+  .contact h2 {
+    font-size: 1.6rem;
+  }
 }
