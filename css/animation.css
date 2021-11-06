@@ -1,5 +1,5 @@
 @keyframes blink {
-  0% {
+  30% {
     opacity: 1;
   }
   50% {
@@ -7,5 +7,20 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes btn-blink {
+  0% {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+  }
+  50% {
+    background: var(--seondary-color);
+    color: var(--primary-color);
+  }
+  100% {
+    background: var(--primary-color);
+    color: var(--secondary-color);
   }
 }
