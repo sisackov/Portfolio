@@ -15,79 +15,27 @@
   background: var(--color-darkpink);
 }
 
-.btn-dark {
-  background: #333;
-  color: var(--primary-color);
-}
-
-.list {
-  margin: 0.5rem 0;
-  list-style: none;
-}
-
-.list li {
-  padding: 0.5rem 0;
-  border-bottom: #444 dotted 1px;
-}
-
 .text-center {
   text-align: center;
 }
 
-.bg-light {
-  background: #f4f4f4;
-  color: #333;
-}
-
 .bg-dark {
-  background: #333;
+  background: var(--secondary-color);
   color: var(--primary-color);
 }
 
-.bg-primary {
-  background: #93cb52;
-  color: var(--primary-color);
-}
-
-.l-heading {
+.heading--large {
   font-size: 4rem;
   margin-bottom: 0.75rem;
   line-height: 1.1;
 }
 
-.m-heading {
+.heading--medium {
   font-size: 2rem;
   margin-bottom: 0.75rem;
   line-height: 1.1;
 }
 
-.s-heading {
-  font-size: 1.5rem;
-  margin-bottom: 1.75rem;
-  line-height: 1.1;
-}
-
-.lead {
-  font-size: 1.3rem;
-  margin-bottom: 2rem;
-}
-
-.py-1 {
+.padding-y {
   padding: 1.5rem 0;
-}
-.py-2 {
-  padding: 2rem 0;
-}
-.py-3 {
-  padding: 3rem 0;
-}
-
-.p-1 {
-  padding: 1.5rem;
-}
-.p-2 {
-  padding: 2rem;
-}
-.p-3 {
-  padding: 3rem;
 }

@@ -1,9 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
-/* TODO BEM */
 :root {
   --page-size: 100vh;
-  --primary-color: white;
-  --secondary-color: #333;
+  --primary-color: #fff;
+  --secondary-color: #2f2f2f;
   --color-redpink: #e31b6d;
   --color-darkpink: #9e124c;
   --color-lightgreen: #93cb52;
@@ -19,7 +18,8 @@
 body {
   font-family: "Roboto", sans-serif;
   line-height: 1.4;
-  min-width: 320px;
+  background: #f4f4f4;
+  color: var(--secondary-color);
 }
 
 a {
@@ -36,8 +36,8 @@ p {
   justify-content: space-between;
   position: sticky;
   top: 0;
-  background: #2f2f2f;
-  color: white;
+  background: var(--secondary-color);
+  color: var(--primary-color);
   z-index: 1;
   padding: 1rem;
 }
@@ -49,7 +49,7 @@ p {
 }
 
 .navbar__side-list a {
-  color: white;
+  color: var(--primary-color);
   padding: 0.75rem;
   margin: 0 0.25rem;
 }
@@ -88,7 +88,7 @@ p {
 .hero {
   background: #333 url("/img/hero-img.jpg") no-repeat center center/cover;
   height: var(--page-size);
-  color: white;
+  color: var(--primary-color);
 }
 
 .hero-content {
@@ -139,14 +139,6 @@ p {
   margin-bottom: 1rem;
 }
 
-/* 
-TODO animation
-.about__items--text {
-  margin: 1rem auto;
-  border: var(--color-darkpink) 4px solid;
-  border-radius: 20%;
-} */
-
 /* Section: Portfolio */
 .portfolio {
   height: var(--page-size);
@@ -179,7 +171,6 @@ TODO animation
 }
 
 /* Section: Contact */
-/* TODO animation*/
 .contact {
   display: flex;
   height: 90vh;
