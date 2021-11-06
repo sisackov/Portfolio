@@ -37,7 +37,9 @@
   ##Screen = B/w 320px to 479px
 */
 @media (min-width: 320px) and (max-width: 480px) {
-  /* CSS */
+  .container {
+    margin-top: 75px;
+  }
   .navbar {
     flex-direction: column;
     align-items: center;
@@ -65,32 +67,30 @@
     font-size: 2.2rem;
   }
 
-  /* .hero-content .hero-btn {
-    margin-bottom: 16rem;
-  } */
+  /* About */
+  .about__items {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
 
-  #who {
+  .about__items--item:hover .about__items--text {
     display: block;
   }
 
-  #who .who-img {
+  .about__items--text {
     display: none;
   }
 
-  #clients .items img {
-    width: 80%;
-  }
-
-  #clients .items div:last-child {
+  /* Portfolio */
+  .portfolio__items--item p {
     display: none;
   }
 
-  #contact {
-    flex-direction: column;
+  .portfolio__items--item img {
+    width: 200px;
+    height: 155px;
   }
 
-  #contact .map {
-    height: 200px;
-    border-top: 4px solid #333;
-  }
+  /* Contact */
 }

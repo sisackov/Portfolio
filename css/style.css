@@ -76,7 +76,7 @@ p {
 
 /* Container for all pages */
 .container {
-  max-width: 1100px;
+  max-width: 1100px; /* TODO */
   margin: auto;
   padding: 0 2rem;
   overflow: hidden;
