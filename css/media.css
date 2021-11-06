@@ -1,35 +1,23 @@
-/* 
-    TODO widescreen
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
-@media (min-width: 1281px) {
+@media (min-width: 481px) and (max-width: 768px) {
   /* CSS */
-}
+  /* About */
+  .about__items {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
 
-/* 
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
-*/
-@media (min-width: 1025px) and (max-width: 1280px) {
-  /* CSS */
-}
+  .about__items--item:hover .about__items--text {
+    display: block;
+  }
 
-/* 
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
-*/
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* CSS */
-}
+  .about__items--item:hover i {
+    display: none;
+  }
 
-/* 
-    TODO tablet landscape
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-*/
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  /* CSS */
+  .about__items--text {
+    display: none;
+  }
 }
 
 /* 
@@ -69,29 +57,14 @@
     font-size: 2.2rem;
   }
 
-  /* About */
-  .about__items {
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-  }
-
-  .about__items--item:hover .about__items--text {
-    display: block;
-  }
-
-  .about__items--text {
-    display: none;
-  }
-
   /* Portfolio */
   .portfolio__items--item p {
     display: none;
   }
 
   .portfolio__items--item img {
-    width: 200px;
-    height: 155px;
+    width: 150px;
+    height: 115px;
   }
 
   /* Contact */
